@@ -52,7 +52,7 @@ install_filemanager()
 	# See https://en.wikipedia.org/wiki/Uname
 	unamem="$(uname -m)"
 	case $unamem in
-	*aarch64*)
+	*aarch64*|arm64)
 		filemanager_arch="arm64";;
 	*64*)
 		filemanager_arch="amd64";;
